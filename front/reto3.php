@@ -12,16 +12,26 @@
     <p><strong>Tu misión:</strong> Romper el código y escribir la frase correcta para restaurar el equilibrio en el tiempo.</p>
     <img src="../media/strange_code.png" alt="strange"> 
     <form action="../back/procesar.php" method="post">
-        "<input type="text" name="p1" required>
-        <input type="text" name="p2" required>
-        <input type="text" name="p3" required>
-        <input type="text" name="p4" required>!
-        <input type="text" name="p5" required>,
-        <input type="text" name="p6" required>
-        <input type="text" name="p7" required>
-        <input type="text" name="p8" required>
-        <input type="text" name="p9" required>
-        <input type="text" name="p10" required>!"
-        <button type="reto3">Enviar</button>
+        "<input type="text" name="p1" required maxlength="4">
+        <input type="text" name="p2" required maxlength="2">
+        <input type="text" name="p3" required maxlength="2">
+        <input type="text" name="p4" required maxlength="5">!
+        <input type="text" name="p5" required maxlength="8">,
+        <input type="text" name="p6" required maxlength="4">
+        <input type="text" name="p7" required maxlength="2">
+        <input type="text" name="p8" required maxlength="2">
+        <input type="text" name="p9" required maxlength="2">
+        <input type="text" name="p10" required maxlength="3">!"
+        <input type="submit" name="reto3" value="Enviar">
+    </form>
+    <?php
+    if (isset($_GET["pista"])){
+        echo "<p style='color: red;'>Error, piensa en el metal más poderoso y VIBRANTE </p>"; // Pista provisional
+    }
+
+    if (isset($_GET["error"])){
+        echo "<p style='color: red;'>Te has pasado de listo. </p>";
+    }
+    ?>
 </body>
 </html>

@@ -16,7 +16,7 @@
         <input type="number" name="n1" required>
         <input type="number" name="n2" required>
         <input type="number" name="n3" required>
-        <button type="reto2">Enviar</button>
+        <input type="submit" name="reto2" value="Enviar">
     </form>
     <?php
     if (isset($_GET["pista"])){
