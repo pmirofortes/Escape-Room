@@ -36,6 +36,7 @@
         text-align: justify;
         }
 
+        
         .crawl {
         position: relative;
         top: 99999px;
@@ -63,6 +64,153 @@
             transform: rotateX(25deg) translateZ(-2500px);
         }
         }
+
+        /* Título fijo oculto al inicio */
+        .titulo-fijo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 170, 255, 0.2);
+            color: #00aaff;
+            padding: 20px 40px;
+            border: 2px solid rgba(0, 170, 255, 0.8);
+            border-radius: 10px;
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
+            text-align: center;
+            opacity: 0;
+            
+            /* Animación */
+            animation: aparecerTitulo 2s ease-in-out forwards;
+            animation-delay: 60s; /* Se activa tras la animación Star Wars */
+        }
+
+        /* Animación para hacer aparecer el título */
+        @keyframes aparecerTitulo {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .boton-empezar {
+            position: fixed;
+            top: 60%;
+            left: 43.5%;
+            background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
+            color: #00aaff;
+            font-family: 'Pathway Gothic One', sans-serif;
+            padding: 15px 30px;
+            border: 2px solid rgba(0, 170, 255, 0.8);
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+            animation: glow 2s infinite alternate;
+            opacity: 0;
+
+            animation: aparecerBoton 2s ease-in-out forwards;
+            animation-delay: 60s;
+        }
+        @keyframes aparecerBoton {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .boton-empezar::before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Efecto al pasar el mouse */
+        .boton-empezar:hover {
+            background: rgba(0, 170, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
+            transform: scale(1.05);
+        }
+
+        .boton-empezar:hover::before {
+            top: 0;
+            left: 0;
+        }
+
+
+        /* Botón flotante en la esquina inferior derecha */
+        .boton-saltar {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
+        color: #00aaff;
+        font-family: 'Pathway Gothic One', sans-serif;
+        padding: 15px 30px;
+        border: 2px solid rgba(0, 170, 255, 0.8);
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+        animation: glow 2s infinite alternate;
+        }
+
+        /* Efecto de resplandor interno */
+        .boton-saltar::before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Efecto al pasar el mouse */
+        .boton-saltar:hover {
+            background: rgba(0, 170, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
+            transform: scale(1.05);
+        }
+
+        .boton-saltar:hover::before {
+            top: 0;
+            left: 0;
+        }
+
+        .fondo-final {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./media/vader.jpg') center/cover no-repeat;
+            opacity: 0;
+            z-index: -1; /* Para que esté detrás de todo */
+            animation: fadeIn 3s ease-in-out forwards;
+            animation-delay: 60s; /* Aparece después del scroll */
+        }
+
+        /* Animación para mostrar el fondo */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 0.5; } /* Ajusta la transparencia de la imagen */
+        }
     </style>
 </head>
 <body>
@@ -82,10 +230,22 @@
             <p>Tu misión, como parte de este grupo de valientes, es atravesar los obstáculos, resolver enigmas y superar las pruebas que el Imperio ha dejado en su camino. Solo con astucia, valentía y trabajo en equipo podrás obtener los planos de la Estrella de la Muerte y cambiar el destino de la galaxia para siempre.</p>
         </div>
     </section>
+    
+    <div class="titulo-fijo">ESCAPE DEL IMPERIO</div>
 
+    <a href="./front/reto1.php" class="boton-empezar" target="_blank">Empezar Misión</a>
+
+    <!--  He creado el boton con el css directamente y he linkeado el class -->
+    <a href="./front/reto1.php" class="boton-saltar" target="_blank">Saltar a la Misión</a>
+
+    <div class="fondo-final"></div>
+
+    <!--
+    Lo he comentado porque no funcionaba
     <form action="front/reto1.php" method="get">
         <button type="submit">Comenzar</button>
     </form>
+    -->
     
     <?php
     //mensaje para no poder hacer trampas
