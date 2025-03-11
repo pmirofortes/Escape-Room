@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destruir la Estrella de la Muerte</title>
-    <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>

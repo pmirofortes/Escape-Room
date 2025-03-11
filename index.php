@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape del imperio</title>
+    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <style>
         body {
         width: 100%;
         height: 100%;
         background: #000;
         overflow: hidden;
+        background-image: url('./media/fondoEstrellas.jpg');
         }
 
         .fade {
@@ -240,13 +242,12 @@
 
     <div class="fondo-final"></div>
 
-    <!--
-    Lo he comentado porque no funcionaba
-    <form action="front/reto1.php" method="get">
-        <button type="submit">Comenzar</button>
-    </form>
-    -->
     
+    <audio id="backgroundMusic" autoplay loop>
+    <source src="./media/intro.mp3" type="audio/mpeg">
+    
+    </audio>
+
     <?php
     //mensaje para no poder hacer trampas
     if (isset($_GET["pillo"])){

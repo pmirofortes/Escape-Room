@@ -23,14 +23,19 @@ else if (isset($_POST["reto1"])){
     header("Location: ../front/reto1.php?pista"); // Redirigir al reto 1
 }
 // RETO 2
-else if (isset($_POST["reto2"]) && $_POST["n1"] == 1 && $_POST["n2"] == 6 && $_POST["n3"] == 4){
+else if (isset($_POST["reto2"]) && $_POST["code"] == 164){
     $_SESSION["reto2"] = "check"; 
     header("Location: ../front/reto3.php"); // Redirigir al reto 3
 }else if (isset($_POST["reto2"])){
-    header("Location: ../front/reto2.php?pista"); // Redirigir al reto 2
+    header("Location: ../back/gameover.php?motivo=compactador_fallos"); // Redirigir al gameover
 }
 // RETO 3
-
+else if(isset($_POST["reto3"]) && ($_POST["codigo"]) == "Obi-Wan el mejor"){
+    $_SESSION["reto3"] = "check"; 
+    header("Location: ../front/reto4.php"); // Redirigir al reto 4
+}else if (isset($_POST["reto3"])){ 
+    header("Location: ../front/reto3.php?pista"); // Redirigir al reto 3
+}
 // RETO 4
 
 // RETO 5

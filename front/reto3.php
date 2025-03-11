@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <h1>Configurar los escudos de la base rebelde</h1>
-    <p></p>
-    
-    </form>
+    <p>Tras escapar de la Estrella de la Muerte, la Rebelión ha establecido una nueva base en el remoto planeta helado de Hoth. La Base Echo, oculta entre montañas de nieve y ventiscas implacables, es ahora el último bastión de la Alianza. Pero el Imperio nunca deja de acechar, y una amenaza inminente se cierne sobre vosotros.</p>
+    <p>Los sensores han detectado movimientos sospechosos en la órbita del planeta. El Alto Mando teme lo peor: una inminente invasión imperial. Los escudos defensivos de la base son la única esperanza para ganar tiempo y permitir la evacuación.</p>
+    <p>El oficial que estaba a cargo de los sistemas de seguridad ha tenido que evacuar de emergencia, pero antes de irse dejó una clave en un código QR. Este código contiene la contraseña correcta para activar los generadores de escudo y proteger la base. Sin embargo, los sistemas de Hoth son antiguos y requieren que la configuración se realice manualmente.</p>
+    <img>QR
+    <form action="../back/procesar.php" method="POST">
+            <input type="text" name="codigo">
+            <br>
+            <button type="submit" name="reto3">Enviar</button>
+        </form>
     imagen bg Hoth base Echo vs AT-AT
+QR que vaya a un formulario en el movil con diseño responsive entonces en el qr despues de poner algunos datos te da un codigo para ponerlo aqui
+    Cuando este subido a un hosting, podremos poner el QR al form de la carpeta reto 3
 
     <?php
     if (isset($_GET["pista"])){

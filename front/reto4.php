@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <h1>Sabotear el generador de escudos de la segunda Estrella de la Muerte</h1>
+    simon dice 2x2 3 rondas a mayor dificultad y 3 codigos de tipo check, cuando superas una ronda se guarda en un formulario
 
-
-    juego de la bomba de cortar cables
-
-    <form>
+    <form action="../back/procesar.php" method="POST">
     </form>
     <input type="submit" name="reto4" value="Enviar">
 

@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El mensaje oculto de la princesa Leia</title>
-    <link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/style.css">
+    <style>
+         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('../media/obiwan_r2.png');
+            background-repeat: no-repeat; /* Evitar que la imagen se repita */
+            background-size: cover; /* Ajustar la imagen para que cubra toda la pantalla */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+
+        }
+    </style>
 </head>
 <body>
     <h1>El mensaje oculto de la princesa Leia</h1>
-    <p></p>
-    <img src="../media/strange_code.png" alt="strange"> 
+    <p>Tatooine. Un planeta desértico y olvidado en los Territorios del Borde Exterior. Pero hoy, este rincón remoto de la galaxia se convierte en el punto de partida de una misión crucial para la Rebelión.</p>
+    <p>Recién llegados a Mos Eisley, Luke Skywalker y Obi-Wan Kenobi han hecho contacto con R2-D2, el pequeño droide astromecánico que transporta un mensaje vital para la Alianza Rebelde. Entre pitidos y destellos, R2 proyecta un código cifrado, un mensaje en clave que solo los más astutos podrán descifrar.</p>
+    <p>Tu misión es clara: usar el descifrador adecuado para revelar el contenido del mensaje y avanzar en tu camino hacia la Rebelión.</p>
+    <img src="../media/codigo_cifrado.png" alt="codigo cifrado"> 
+    <img src="../media/alfabeto.png" alt="alfabeto"> 
     <form action="../back/procesar.php" method="post">
         "<input type="text" name="p1" required maxlength="3">
         <input type="text" name="p2" required maxlength="2">
@@ -27,9 +46,6 @@
         <input type="text" name="p13" required maxlength="4">!
         <input type="submit" name="reto3" value="Enviar">
     </form>
-    imagen bg tatooine
-
-    respuesta : "Que la fuerza te acompañe, viaja a Alderaan y busca a Han Solo!"
 
     <?php
     if (isset($_GET["pista"])){
