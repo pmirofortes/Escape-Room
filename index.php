@@ -7,6 +7,9 @@
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <style>
         body {
+        margin: 0;
+        padding: 0;
+        position: fixed;
         width: 100%;
         height: 100%;
         background: #000;
