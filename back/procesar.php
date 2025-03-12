@@ -22,6 +22,7 @@ if (isset($_POST["reto1"]) &&
 else if (isset($_POST["reto1"])){
     header("Location: ../front/reto1.php?pista"); // Redirigir al reto 1
 }
+
 // RETO 2
 else if (isset($_POST["reto2"]) && $_POST["code"] == 164){
     $_SESSION["reto2"] = "check"; 

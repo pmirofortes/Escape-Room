@@ -5,60 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escape del Compactador de Basura</title>
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
-    <link rel="stylesheet" href="../styles/style.css">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #2c3e50; /* Azul oscuro elegante */
-            color: black;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .padlock {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .code-input {
-            font-size: 2rem;
-            text-align: center;
-            letter-spacing: 10px;
-            background: white;
-            color: black;
-            border: none;
-            width: 120px;
-            padding: 5px;
-        }
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .buttons button {
-            font-size: 1.5rem;
-            padding: 10px;
-            background: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .buttons button:hover {
-            background: #2980b9;
-        }
-        #timer {
-            font-size: 1.5rem;
-            color: red;
-            margin-bottom: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/styleReto2.css">
     <script>
-        let timeLeft = 60;
+        let timeLeft = 116;
         function updateTimer() {
             document.getElementById("timer").textContent = "Tiempo restante: " + timeLeft + "s";
             if (timeLeft === 0) {
@@ -83,14 +32,22 @@
     </script>
 </head>
 <body>
-    <h1>Escape del Compactador de Basura</h1>
-    <p>La misión ha dado un giro inesperado. Tras encontrar a Han Solo en la cantina de Mos Eisley y convencerlo de que os lleve a Alderaan, el Halcón Milenario ha sido arrastrado por los rayos tractores de la Estrella de la Muerte. Lo que debía ser un simple rescate de la princesa Leia Organa se ha convertido en una carrera desesperada por la supervivencia.</p>
-    <p>Tras irrumpir en su celda y liberarla, la huida se complica. Tropas imperiales os acorralan, disparos láser rebotan por los pasillos metálicos y la única escapatoria que encontráis es lanzaros por un conducto de mantenimiento… directo al compactador de basura.</p>
-    <p>De repente, un tentáculo emerge y se enrosca alrededor de la pierna de Luke, arrastrándolo hacia las profundidades. Entre forcejeos y disparos fallidos, lográis que el monstruo lo suelte. Pero el alivio dura poco…</p>
-    <p>Las paredes del compactador empiezan a cerrarse. No hay escapatoria… a menos que consigáis contactar con vuestros droides. C-3PO y R2-D2 están en la sala de control, pero el sistema de comunicación imperial requiere un código de emergencia para activar el intercomunicador.</p>
-    <p>¡Date prisa, el tiempo se agota!</p>
+    <h1 class="titulo">Escape del Compactador de Basura</h1>
+    <p class="introduccion">La misión ha dado un giro inesperado.<br><br> 
+    Tras encontrar a Han Solo en la cantina de Mos Eisley y convencerlo de que os lleve a Alderaan, el Halcón Milenario ha sido arrastrado por los rayos tractores de la Estrella de la Muerte. Lo que debía ser un simple rescate de la princesa Leia Organa se ha convertido en una carrera desesperada por la supervivencia.<br><br>
+    Tras irrumpir en su celda y liberarla, la huida se complica. Tropas imperiales os acorralan, disparos láser rebotan por los pasillos metálicos y la única escapatoria que encontráis es lanzaros por un conducto de mantenimiento… directo al compactador de basura.<br><br>
+    De repente, un tentáculo emerge y se enrosca alrededor de la pierna de Luke, arrastrándolo hacia las profundidades. Entre forcejeos y disparos fallidos, lográis que el monstruo lo suelte. Pero el alivio dura poco…<br><br></p>
+    <p class="mision">Las paredes del compactador empiezan a cerrarse. No hay escapatoria… a menos que consigáis contactar con vuestros droides.<br><br>
+    C-3PO y R2-D2 están en la sala de control, pero el sistema de comunicación imperial requiere un código de emergencia para activar el intercomunicador.<br><br>
+    ¡Date prisa, el tiempo se agota!</p>
+
+    <div class="fondo"></div>
+    <div class="fondo-final"></div>
+
+    <img class="holograma" src="../media/rebeldeEspia.png" alt="robot">
+
     <div id="timer">Tiempo restante: 60s</div>
-    <img src="../media/crack.png" alt="crack">  <!-- Imagen provisional, se reemplazará más adelante -->
+    <img src="../media/crack.png" class="crack" alt="crack">  <!-- Imagen provisional, se reemplazará más adelante -->
     
     <div class="padlock">
         <h2>Introduce el código</h2>
@@ -110,7 +67,7 @@
                 <button type="button" onclick="addNumber(0)">0</button>
             </div>
             <br>
-            <button type="submit" name="reto2">Enviar</button>
+            <button type="submit" class="boton" name="reto2">Enviar</button>
         </form>
     </div>
     
