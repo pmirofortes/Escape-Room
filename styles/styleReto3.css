@@ -1,0 +1,96 @@
+.atat
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../media/rescateLeia.jpg') center/cover no-repeat;
+    z-index: -1;
+    animation: fadeOut 2s ease-in-out 32s forwards;
+}
+.baseRebelde
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../media/baseRebelde.jpg') center/cover no-repeat;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+.mision
+{
+    position: fixed;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 52, 71, 0.9);
+    color: #00aaff;
+    padding: 30px 50px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    text-align: center;
+    max-width: 80%;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+.titulo
+{
+    position: fixed;
+    top: 18%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 52, 71, 0.78);
+    color: #00aaff;
+    padding: 20px 40px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
+    text-align: center;
+    animation: fadeOut 2s ease-in-out 30s forwards;
+}
+.introduccion
+{
+    margin: 20px;
+    padding: 20px;
+    position: fixed;
+    width: 30%;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 52, 71, 0.78);
+    color: #00aaff;
+    padding: 20px 40px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
+    text-align: center;
+    animation: fadeOut 2s ease-in-out 30s forwards;
+}
+@keyframes fadeOut 
+{
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}
+@keyframes fadeIn 
+{
+    0% { opacity: 0; visibility: hidden; }
+    100% { opacity: 1; visibility: visible; }
+}
