@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo</title>
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/styleReto4.css">
 </head>
 <body>
     <h1>Sabotear el generador de escudos de la segunda Estrella de la Muerte</h1>

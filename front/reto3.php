@@ -6,6 +6,7 @@
     <title>Defensa de Hoth</title>
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/styleReto3.css">
+    <script src="../scripts/contador.js" ></script>
 </head>
 <body>
     <h1 class="titulo">Configurar los escudos de la base rebelde</h1>
@@ -21,7 +22,7 @@
     <form class="respuesta-user" action="../back/procesar.php" method="POST">
             <input type="text" name="codigo">
             <br>
-            <button class="boton-enviar" type="submit" name="reto3">Enviar Código</button>
+            <button class="boton" type="submit" name="reto3">Enviar Código</button>
     </form>
 
     <div>

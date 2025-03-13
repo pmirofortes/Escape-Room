@@ -6,30 +6,7 @@
     <title>Escape del Compactador de Basura</title>
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/styleReto2.css">
-    <script>
-        let timeLeft = 60;
-        function updateTimer() {
-            document.getElementById("timer").textContent = "Tiempo restante: " + timeLeft + "s";
-            if (timeLeft === 0) {
-                window.location.href = "../back/gameover.php?motivo=compactador_tiempo"; // Redirige a otra página al acabar el tiempo
-            } else {
-                timeLeft--;
-                setTimeout(updateTimer, 1000);
-            }
-        }
-        
-        function addNumber(num) {
-            let input = document.getElementById("code");
-            if (input.value.length < 3) {
-                input.value += num;
-            }
-        }
-        function clearInput() {
-            document.getElementById("code").value = "";
-        }
-        
-        window.onload = updateTimer;
-    </script>
+    <script src="../scripts/contador.js" ></script>
 </head>
 <body>
     <h1 class="titulo">Escape del Compactador de Basura</h1>

@@ -136,51 +136,48 @@
     text-align: center;
     animation: fadeOut 2s ease-in-out 30s forwards;
 }
-.respuesta-user
-{
-    position: fixed;
-    top: 42%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    background: rgba(13, 52, 71, 0.9);
+.boton{
+    
+    background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
     color: #00aaff;
-    padding: 30px 50px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 15px 30px;
     border: 2px solid rgba(0, 170, 255, 0.8);
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
-    text-align: center;
-    max-width: 80%;
-    opacity: 0;
-    visibility: hidden;
-    animation: fadeIn 2s ease-in-out 32s forwards;
-    
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    animation: glow 2s infinite alternate;
+
+    flex-basis: 100%; /* Hace que el botón ocupe toda la línea */
+    margin-top: 10px; /* Espaciado superior para separarlo de los inputs */
 }
-.respuesta-user::before {
+.boton::before {
     content: "";
     position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
     background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
-    border-radius: inherit; /* Para que siga la forma del botón */
-    transition: all 0.4s ease-in-out;
-    opacity: 0; /* Ocultarlo inicialmente */
+    transition: all 0.5s ease-in-out;
 }
 
 /* Efecto al pasar el mouse */
-.respuesta-user:hover {
+.boton:hover {
     background: rgba(0, 170, 255, 0.3);
     box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
     transform: scale(1.05);
 }
 
-.respuesta-user:hover::before {
-    top: 0;
-    left: 0;
+.boton:hover::before {
+    top: -5%;
+    left: -5%;
 }
 @keyframes fadeOut 
 {

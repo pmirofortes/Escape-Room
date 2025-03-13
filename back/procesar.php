@@ -28,7 +28,7 @@ else if (isset($_POST["reto2"]) && $_POST["code"] == 164){
     $_SESSION["reto2"] = "check"; 
     header("Location: ../front/reto3.php"); // Redirigir al reto 3
 }else if (isset($_POST["reto2"])){
-    header("Location: ../back/gameover.php?motivo=compactador_fallos"); // Redirigir al gameover
+    header("Location: ../front/gameover.php?motivo=compactador_fallos"); // Redirigir al gameover
 }
 // RETO 3
 else if(isset($_POST["reto3"]) && ($_POST["codigo"]) == "Obi-Wan el mejor"){
