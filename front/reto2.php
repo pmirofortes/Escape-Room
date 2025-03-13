@@ -33,7 +33,7 @@
 </head>
 <body>
     <h1 class="titulo">Escape del Compactador de Basura</h1>
-    <p class="introduccion">La misión ha dado un giro inesperado.<br><br> 
+    <p class="introduccion">Este mensaje es una pruebaLa misión ha dado un giro inesperado.<br><br> 
     Tras encontrar a Han Solo en la cantina de Mos Eisley y convencerlo de que os lleve a Alderaan, el Halcón Milenario ha sido arrastrado por los rayos tractores de la Estrella de la Muerte. Lo que debía ser un simple rescate de la princesa Leia Organa se ha convertido en una carrera desesperada por la supervivencia.<br><br>
     Tras irrumpir en su celda y liberarla, la huida se complica. Tropas imperiales os acorralan, disparos láser rebotan por los pasillos metálicos y la única escapatoria que encontráis es lanzaros por un conducto de mantenimiento… directo al compactador de basura.<br><br>
     De repente, un tentáculo emerge y se enrosca alrededor de la pierna de Luke, arrastrándolo hacia las profundidades. Entre forcejeos y disparos fallidos, lográis que el monstruo lo suelte. Pero el alivio dura poco…<br><br></p>
