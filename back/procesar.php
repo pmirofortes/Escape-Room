@@ -38,6 +38,11 @@ else if(isset($_POST["reto3"]) && ($_POST["codigo"]) == "Obi-Wan el mejor"){
     header("Location: ../front/reto3.php?pista"); // Redirigir al reto 3
 }
 // RETO 4
-
-// RETO 5
+else if{
+    // Completar con la lógica del reto 4
+    
+}
+else{
+    header("Location: ../front/reto4.php?pista"); // Redirigir al reto 4
+}
 ?>

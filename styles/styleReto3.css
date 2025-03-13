@@ -43,6 +43,14 @@
     visibility: hidden;
     animation: fadeIn 2s ease-in-out 32s forwards;
 }
+.rebelde
+{
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    width: 25%; 
+    animation: fadeOut 2s ease-in-out 30s forwards;
+}
 .titulo
 {
     position: fixed;

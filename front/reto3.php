@@ -14,7 +14,10 @@
     Los sensores han detectado movimientos sospechosos en la órbita del planeta. El Alto Mando teme lo peor: una inminente invasión imperial. Los escudos defensivos de la base son la única esperanza para ganar tiempo y permitir la evacuación.<br><br>
     <p class="mision">El oficial que estaba a cargo de los sistemas de seguridad ha tenido que evacuar de emergencia, pero antes de irse dejó una clave en un código QR.<br><br>
     Este código contiene la contraseña correcta para activar los generadores de escudo y proteger la base. Sin embargo, los sistemas de Hoth son antiguos y requieren que la configuración se realice manualmente.</p>
-    <img>QR
+    
+    <img class="QR"src="../media/QR.png" alt="QR">
+    <p class="instrucciones">Escanea el código QR para obtener la clave y proteger la base.</p>
+
     <form action="../back/procesar.php" method="POST">
             <input type="text" name="codigo">
             <br>
@@ -25,9 +28,9 @@
         <img class="atat" src="../media/ATAT.jpg" alt="Hoth base Echo vs AT-AT">
         <img class="baseRebelde" src="../media/baseRebelde.jpg" alt="base">
     </div>
-    <!--imagen bg Hoth base Echo vs AT-AT
-QR que vaya a un formulario en el movil con diseño responsive entonces en el qr despues de poner algunos datos te da un codigo para ponerlo aqui
-    Cuando este subido a un hosting, podremos poner el QR al form de la carpeta reto 3-->
+
+    <img class="rebelde" src="../media/rebeldeEspia.png" alt="rebelde">
+
 
     <?php
     if (isset($_GET["pista"])){
