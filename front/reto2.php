@@ -7,7 +7,7 @@
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/styleReto2.css">
     <script>
-        let timeLeft = 116;
+        let timeLeft = 60;
         function updateTimer() {
             document.getElementById("timer").textContent = "Tiempo restante: " + timeLeft + "s";
             if (timeLeft === 0) {
