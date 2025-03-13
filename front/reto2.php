@@ -49,10 +49,6 @@
     </div>
     
     <?php
-    if (isset($_GET["pista"])){
-        echo "<p>Error, prueba con 1XX </p>"; // Pista provisional la pista no va aqui, ira en la pagina de gameover
-    }
-
     if (isset($_GET["error"])){
         echo "<p>Te has pasado de listo.</p>"; // Mensaje ajustable
     }

@@ -152,7 +152,9 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
-    animation: glow 2s infinite alternate;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+    opacity: 0;
+    visibility: hidden;
 
     flex-basis: 100%; /* Hace que el botón ocupe toda la línea */
     margin-top: 10px; /* Espaciado superior para separarlo de los inputs */
@@ -166,6 +168,9 @@
     height: 120%;
     background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
     transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
 }
 
 /* Efecto al pasar el mouse */
@@ -173,11 +178,35 @@
     background: rgba(0, 170, 255, 0.3);
     box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
     transform: scale(1.05);
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards
 }
 
 .boton:hover::before {
     top: -5%;
     left: -5%;
+}
+#timer {
+    font-size: 1rem; /* Tamaño más grande para mejor visibilidad */
+    color:rgb(242, 39, 39); /* Azul holográfico */
+    text-transform: uppercase; /* Estilo en mayúsculas */
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 5%; /* Ajusta la posición en la pantalla */
+    left: 10%;
+    transform: translateX(-50%);
+    background: rgb(58, 4, 4); /* Fondo translúcido */
+    padding: 15px 30px;
+    border: 2px solid rgba(177, 16, 16, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(118, 20, 20, 0.7), 
+                0 0 20px rgba(214, 60, 60, 0.5), 
+                0 0 40px rgba(255, 0, 0, 0.3); /* Brillo azul holográfico */
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
 }
 @keyframes fadeOut 
 {
