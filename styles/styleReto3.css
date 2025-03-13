@@ -136,6 +136,50 @@
     text-align: center;
     animation: fadeOut 2s ease-in-out 30s forwards;
 }
+.respuesta-user
+{
+    position: fixed;
+    top: 42%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 52, 71, 0.9);
+    color: #00aaff;
+    padding: 30px 50px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    text-align: center;
+    max-width: 80%;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+    
+}
+.respuesta-user::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.respuesta-user:hover {
+    background: rgba(0, 170, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.respuesta-user:hover::before {
+    top: 0;
+    left: 0;
+}
 @keyframes fadeOut 
 {
     0% { opacity: 1; }

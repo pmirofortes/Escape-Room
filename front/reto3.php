@@ -18,10 +18,10 @@
     <img class="QR"src="../media/QR.png" alt="QR">
     <p class="instrucciones">Escanea el código QR para obtener la clave y proteger la base.</p>
 
-    <form action="../back/procesar.php" method="POST">
+    <form class="respuesta-user" action="../back/procesar.php" method="POST">
             <input type="text" name="codigo">
             <br>
-            <button type="submit" name="reto3">Enviar</button>
+            <button class="boton-enviar" type="submit" name="reto3">Enviar Código</button>
     </form>
 
     <div>
