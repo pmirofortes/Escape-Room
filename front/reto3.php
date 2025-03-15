@@ -23,7 +23,7 @@ if (!isset($_SESSION["reto2"])) {
     <p class="mision">El oficial que estaba a cargo de los sistemas de seguridad ha tenido que evacuar de emergencia, pero antes de irse dejó una clave en un código QR.<br><br>
     Este código contiene la contraseña correcta para activar los generadores de escudo y proteger la base. Sin embargo, los sistemas de Hoth son antiguos y requieren que la configuración se realice manualmente.</p>
     
-    <img class="QR" src="../media/QR.png" alt="QR">
+    <img class="QR" src="../media/QRdef.png" alt="QR">
     <p class="instrucciones">Escanea el código QR para obtener la clave y proteger la base.</p>
     <div id="timer">Tiempo restante: 60s</div>
     <form class="respuesta-user" action="../back/procesar.php" method="POST">
