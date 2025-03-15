@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,16 +33,12 @@
         <input type="text" name="p11" required maxlength="1">
         <input type="text" name="p12" required maxlength="3">
         <input type="text" name="p13" required maxlength="4">
-        <input class="boton" type="submit" name="reto2" value="ENVIAR CÓDIGO">
+        <input class="boton" type="submit" name="reto1" value="ENVIAR CÓDIGO">
     </form>
 
     <?php
     if (isset($_GET["pista"])){
-        echo "<p></p>"; // Pista provisional
-    }
-
-    if (isset($_GET["error"])){
-        echo "<p>Te has pasado de listo. </p>"; // Cambiar mensaje
+        echo "<p>Toma papel y lapiz, hazlo poco a poco...</p>";
     }
     ?>
 </body>

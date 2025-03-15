@@ -6,6 +6,7 @@
     <title>Escape del imperio</title>
     <link type="image/png" sizes="120x120" rel="icon" href="./media/favicon1.png">
     <link rel="stylesheet" href="./styles/styleIndex.css">
+
 </head>
 <body>
     <div class="fade"></div>

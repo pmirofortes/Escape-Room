@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION["reto2"])) {
+    header("Location: reto2.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

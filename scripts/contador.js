@@ -1,4 +1,4 @@
-let timeLeft = 10;
+let timeLeft = 90;
 
 function updateTimer() {
     document.getElementById("timer").textContent = "Tiempo restante: " + timeLeft + "s";

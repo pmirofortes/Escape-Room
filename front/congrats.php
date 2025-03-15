@@ -1,10 +1,17 @@
+<?php
+session_start();
+if (!isset($_SESSION["reto4"])) {
+    header("Location: reto4.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final del juego</title>
-    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
+    <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">    
     <link rel="stylesheet" href="../styles/styleCongrats.css">
 </head>
 <body>
