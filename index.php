@@ -35,14 +35,13 @@
 
     <div class="fondo-final"></div>
 
-    
+    <!--  Audio Intro -->
     <audio id="backgroundMusic" autoplay loop>
-    <source src="./media/intro.mp3" type="audio/mpeg">
-    
+    <source src="./media/intro.mp3" type="audio/mpeg">   
     </audio>
 
+    <!-- Mensaje para no poder hacer trampas -->
     <?php
-    //mensaje para no poder hacer trampas
     if (isset($_GET["pillo"])){
         echo "<p style='color: red;'>Te has pasado de listo. </p>";
     }

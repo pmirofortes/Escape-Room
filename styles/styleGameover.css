@@ -13,39 +13,92 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(58, 4, 4); 
+    color:rgba(237, 54, 54, 0.7);
+    padding: 20px 40px;
+    border: 2px solid rgba(177, 16, 16, 0.8);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(118, 20, 20, 0.7), 
+                0 0 20px rgba(214, 60, 60, 0.5), 
+                0 0 40px rgba(255, 0, 0, 0.3);
+    text-align: center;
 }
 
 p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    background: rgb(58, 4, 4); 
+    color:rgba(237, 54, 54, 0.7);
+    padding: 20px 40px;
+    border: 2px solid rgba(177, 16, 16, 0.8);
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(118, 20, 20, 0.7), 
+                0 0 20px rgba(214, 60, 60, 0.5), 
+                0 0 40px rgba(255, 0, 0, 0.3);
+    text-align: center;
 }
 
 a {
+    position: relative;
     display: inline-block;
-    background-color: #feda4a;
-    color: #000;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
+    color: #00aaff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 15px 30px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    animation: glow 2s infinite alternate;
 }
 
+a::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
 a:hover {
-    background-color: #e5c700;
+    background: rgba(0, 170, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
+    transform: scale(1.05);
+}
+a:hover::before {
+    top: 0;
+    left: 0;
 }
 
 .pista {
-    font-size: 1.5em;
+    font-size: 1.0em;
     font-weight: bold;
     color: red;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    margin-top: 24px;
 }

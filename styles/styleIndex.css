@@ -146,24 +146,24 @@ body {
 
     /* Botón flotante en la esquina inferior derecha */
     .boton-saltar {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
-    color: #00aaff;
-    font-family: 'Pathway Gothic One', sans-serif;
-    padding: 15px 30px;
-    border: 2px solid rgba(0, 170, 255, 0.8);
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
-    animation: glow 2s infinite alternate;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
+        color: #00aaff;
+        font-family: 'Pathway Gothic One', sans-serif;
+        padding: 15px 30px;
+        border: 2px solid rgba(0, 170, 255, 0.8);
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+        animation: glow 2s infinite alternate;
     }
 
     /* Efecto de resplandor interno */

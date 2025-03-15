@@ -9,6 +9,7 @@ session_start();
     <title>El mensaje oculto de la princesa Leia</title>
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/styleReto1.css">
+    <script src="../scripts/jumpIntro.js" defer></script>
 </head>
 <body>
     <h1 class="titulo">El mensaje oculto de la princesa Leia</h1>
@@ -38,7 +39,8 @@ session_start();
 
     <?php
     if (isset($_GET["pista"])){
-        echo "<p>Toma papel y lapiz, hazlo poco a poco...</p>";
+        echo '<p class="pista" >Toma papel y lapiz, hazlo poco a poco...</p>';
+        echo '<button class="boton-jump" onclick="saltarIntroRT1()">Saltar Introducción</button>';
     }
     ?>
 </body>

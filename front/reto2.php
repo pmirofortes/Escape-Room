@@ -14,6 +14,7 @@ if (!isset($_SESSION["reto1"])) {
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/styleReto2.css">
     <script src="../scripts/contador.js" ></script>
+    <script src="../scripts/jumpIntro.js"></script>
 </head>
 <body>
     <h1 class="titulo">Escape del Compactador de Basura</h1>
@@ -55,6 +56,8 @@ if (!isset($_SESSION["reto1"])) {
         </form>
     </div>
     
+    <button class="boton-jump" onclick="saltarIntroRT2()">Saltar Introducción</button>
+
     <?php
     if (isset($_GET["error"])){
         echo "<p>Te has pasado de listo.</p>"; // Mensaje ajustable
