@@ -14,6 +14,7 @@ if (!isset($_SESSION["reto2"])) {
     <link type="image/png" sizes="120x120" rel="icon" href="../media/favicon1.png">
     <link rel="stylesheet" href="../styles/styleReto3.css">
     <script src="../scripts/contador.js"></script>
+    <script src="../scripts/jumpIntro.js"></script>
 </head>
 <body>
     <h1 class="titulo">Configurar los escudos de la base rebelde</h1>
@@ -26,6 +27,7 @@ if (!isset($_SESSION["reto2"])) {
     <img class="QR" src="../media/QRdef.png" alt="QR">
     <p class="instrucciones">Escanea el código QR para obtener la clave y proteger la base.</p>
     <div id="timer">Tiempo restante: 60s</div>
+    
     <form class="respuesta-user" action="../back/procesar.php" method="POST">
             <input type="text" name="codigo">
             <br>
@@ -39,6 +41,7 @@ if (!isset($_SESSION["reto2"])) {
 
     <img class="rebelde" src="../media/rebeldeEspia.png" alt="rebelde">
 
+    <button class="boton-jump" onclick="saltarIntroRT3()">Saltar Introducción</button>
 
     <?php
     if (isset($_GET["pista"])){

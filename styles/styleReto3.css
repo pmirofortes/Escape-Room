@@ -22,6 +22,27 @@
     visibility: hidden;
     animation: fadeIn 2s ease-in-out 32s forwards;
 }
+.respuesta-user
+{
+    position: fixed;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 52, 71, 0.9);
+    color: #00aaff;
+    padding: 30px 50px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    text-align: center;
+    max-width: 80%;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
 .mision
 {
     position: fixed;
@@ -65,7 +86,7 @@
 .rebelde
 {
     position: fixed;
-    top: 607px;
+    top: 640px;
     right: 390px;
     width: 3%; 
     z-index: 10;
@@ -217,4 +238,50 @@
 {
     0% { opacity: 0; visibility: hidden; }
     100% { opacity: 1; visibility: visible; }
+}
+
+
+.boton-jump
+{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
+    color: #00aaff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 15px 30px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    animation: glow 2s infinite alternate;
+}
+ /* Efecto de resplandor interno */
+ .boton-jump::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.boton-jump:hover {
+    background: rgba(0, 170, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.boton-jump:hover::before {
+    top: 0;
+    left: 0;
 }
