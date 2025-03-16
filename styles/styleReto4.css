@@ -1,24 +1,66 @@
-body {
-    background-image: url('../media/cockpit.png');
+.ala-y
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../media/cockpit.png') center/cover no-repeat;
+    z-index: -1;
+}
+.estrellaMuerte-container {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 520px 0.1px 50px;
+    width: 55vw;
+    /* Fondo holográfico */
+    background: rgba(13, 52, 71, 0.5);
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8), 
+                0 0 30px rgba(85, 50, 212, 0.6), 
+                0 0 50px rgba(59, 152, 223, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+.estrellaMuerte
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra exactamente */
+    width: 65vw; /* Ajusta el tamaño en función de la pantalla */
+    max-width: 1000px; /* Evita que sea demasiado grande */
+    padding: 10px; /* Espaciado alrededor de la imagen */
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
 }
 .titulo
 {
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(13, 52, 71, 0.78);
     color: #00aaff;
-    padding: 20px 40px;
+    padding: 10px 40px;
     border: 2px solid rgba(0, 170, 255, 0.8);
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     font-family: 'Pathway Gothic One', sans-serif;
     text-transform: uppercase;
     box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
     text-align: center;
-    animation: fadeOut 2s ease-in-out 30s forwards;
 }
 .introduccion
 {
@@ -39,30 +81,186 @@ body {
     text-align: center;
     animation: fadeOut 2s ease-in-out 30s forwards;
 }
-.mision
+.rebelde
+{
+    position:fixed;
+    top: 30.5%;
+    left: 18%;
+    width: 2vw;
+    z-index: 10;
+    opacity: 0 ;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+.mision 
 {
     position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(13, 52, 71, 0.78);
-    color: #00aaff;
-    padding: 20px 40px;
-    border: 2px solid rgba(0, 170, 255, 0.8);
-    border-radius: 10px;
-    font-size: 10px;
-    font-weight: bold;
-    font-family: 'Pathway Gothic One', sans-serif;
-    text-transform: uppercase;
-    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8);
+    top: 20%;
+    left: 2%;
+    width: 20vw;
+    max-width: 250px; 
+    height: auto;
+    padding: 15px;
+    background: rgba(13, 52, 71, 0.78); 
+    border-right: 2px solid rgba(0, 170, 255, 0.8); 
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8); 
+    border-radius: 0 10px 10px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    animation: fadeIn 2s ease-in-out 30s forwards;
+    font-size: 12px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: bold;
+    color: #00aaff;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+#timer {
+    font-size: 1rem; /* Tamaño más grande para mejor visibilidad */
+    color:rgb(242, 39, 39); /* Azul holográfico */
+    text-transform: uppercase; /* Estilo en mayúsculas */
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 5%; /* Ajusta la posición en la pantalla */
+    left: 10%;
+    transform: translateX(-50%);
+    background: rgb(58, 4, 4); /* Fondo translúcido */
+    padding: 15px 30px;
+    border: 2px solid rgba(177, 16, 16, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(118, 20, 20, 0.7), 
+                0 0 20px rgba(214, 60, 60, 0.5), 
+                0 0 40px rgba(255, 0, 0, 0.3); /* Brillo azul holográfico */
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+.contenedor 
+{
+    position: fixed;
+    top: 20%;
+    right: 1.5%; 
+    width: 20vw;
+    max-width: 250px;
+    height: auto;
+    padding: 15px;
+    background: rgba(13, 52, 71, 0.78); /* Color azul holográfico */
+    border-left: 2px solid rgba(0, 170, 255, 0.8); /* Borde azul como en los mensajes */
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8); /* Efecto de resplandor azul */
+    border-radius: 10px 0 0 10px; /* Bordes redondeados en la parte izquierda */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 32s forwards;
+}
+label {
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+form {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    background: transparent; /* Se elimina el fondo para que coincida con el panel */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"] {
+    margin: 5px 0;
+    padding: 8px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 90%; /* Ajusta el ancho para que no quede pegado a los bordes */
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(8, 54, 239, 0.83);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
+input[type="submit"] {
+    background-color: rgba(0, 163, 245, 0.7);
+    color: #0826a0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 163, 245, 0.7);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+    background-color: #00d9ff;
+    box-shadow: 0 0 15px rgb(0, 202, 224);
+    transform: scale(1.05);
 }
 @keyframes fadeOut {
     0% {opacity: 1;}
     100% {opacity: 0;}
 }
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% { opacity: 0; visibility: hidden; }
+    100% { opacity: 1; visibility: visible; }
+}
+
+.boton-jump
+{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0, 170, 255, 0.1); /* Color azul translúcido */
+    color: #00aaff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 15px 30px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+    animation: glow 2s infinite alternate;
+}
+ /* Efecto de resplandor interno */
+ .boton-jump::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(0, 170, 255, 0.3) 10%, transparent 80%);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.boton-jump:hover {
+    background: rgba(0, 170, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.boton-jump:hover::before {
+    top: 0;
+    left: 0;
 }

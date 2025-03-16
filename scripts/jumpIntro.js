@@ -48,21 +48,27 @@ function saltarIntroRT2() {
 
     document.querySelector(".mision").style.opacity = "1";
     document.querySelector(".mision").style.visibility = "visible";
+    document.querySelector(".mision").style.animation = "none";
 
     document.querySelector(".holograma").style.opacity = "1";
     document.querySelector(".holograma").style.visibility = "visible";
+    document.querySelector(".holograma").style.animation = "none";
 
     document.querySelector(".fondo-final").style.opacity = "1";
     document.querySelector(".fondo-final").style.visibility = "visible";
+    document.querySelector(".fondo-final").style.animation = "none";
 
     document.querySelector(".padlock").style.opacity = "1";
     document.querySelector(".padlock").style.visibility = "visible";
+    document.querySelector(".padlock").style.animation = "none";    
 
     document.querySelector(".code-input").style.opacity = "1";
     document.querySelector(".code-input").style.visibility = "visible";
+    document.querySelector(".code-input").style.animation = "none";
 
     document.querySelector(".buttons").style.opacity = "1";
     document.querySelector(".buttons").style.visibility = "visible";
+    document.querySelector(".buttons").style.animation = "none";
 
     // Array necesaria para recorrer todos los botones y forzar el fadeIn
     document.querySelectorAll(".buttons button").forEach(btn => {
@@ -73,12 +79,16 @@ function saltarIntroRT2() {
 
     document.querySelector("#timer").style.opacity = "1";
     document.querySelector("#timer").style.visibility = "visible";
+    document.querySelector("#timer").style.animation = "none";
+
 
     document.querySelector(".crack").style.opacity = "1";
     document.querySelector(".crack").style.visibility = "visible";
+    document.querySelector(".crack").style.animation = "none";
 
     document.querySelector(".boton").style.opacity = "1";
     document.querySelector(".boton").style.visibility = "visible";
+    document.querySelector(".boton").style.animation = "none";
 }
 
 function saltarIntroRT3() {
@@ -99,18 +109,28 @@ function saltarIntroRT3() {
 
     document.querySelector(".baseRebelde").style.opacity = "1";
     document.querySelector(".baseRebelde").style.visibility = "visible";
+    document.querySelector(".baseRebelde").style.animation = "none";
+    document.querySelector(".baseRebelde").style.display = "block";
 
     document.querySelector(".rebelde").style.opacity = "1";
     document.querySelector(".rebelde").style.visibility = "visible";
+    document.querySelector(".rebelde").style.animation = "none";
+    document.querySelector(".rebelde").style.display = "block";
 
     document.querySelector(".mision").style.opacity = "1";
     document.querySelector(".mision").style.visibility = "visible";
+    document.querySelector(".mision").style.animation = "none";
+    document.querySelector(".mision").style.display = "block";
 
     document.querySelector(".QR").style.opacity = "1";
     document.querySelector(".QR").style.visibility = "visible";
+    document.querySelector(".QR").style.animation = "none";
+    document.querySelector(".QR").style.display = "block";
 
     document.querySelector(".instrucciones").style.opacity = "1";
     document.querySelector(".instrucciones").style.visibility = "visible";
+    document.querySelector(".instrucciones").style.animation = "none";
+    document.querySelector(".instrucciones").style.display = "block";
 
     document.querySelector("#timer").style.opacity = "1";
     document.querySelector("#timer").style.visibility = "visible";
@@ -126,4 +146,41 @@ function saltarIntroRT3() {
     document.querySelector(".respuesta-user").style.visibility = "visible";
     document.querySelector(".respuesta-user").style.animation = "none";
     document.querySelector(".respuesta-user").style.display = "block";
+}
+
+function saltarIntroRT4(){
+    document.querySelector(".introduccion").style.opacity = "0";
+    document.querySelector(".introduccion").style.visibility = "hidden";
+    document.querySelector(".introduccion").style.height = "0";
+    document.querySelector(".introduccion").style.overflow = "hidden";
+
+    document.querySelector(".estrellaMuerte-container").style.opacity = "1";
+    document.querySelector(".estrellaMuerte-container").style.visibility = "visible";
+    document.querySelector(".estrellaMuerte-container").style.animation = "none";
+    document.querySelector(".estrellaMuerte-container").style.display = "block";
+
+    document.querySelector(".mision").style.opacity = "1";
+    document.querySelector(".mision").style.visibility = "visible";
+    document.querySelector(".mision").style.animation = "none";
+    document.querySelector(".mision").style.display = "block";
+
+    document.querySelector(".estrellaMuerte").style.opacity = "1";
+    document.querySelector(".estrellaMuerte").style.visibility = "visible";
+    document.querySelector(".estrellaMuerte").style.animation = "none";
+    document.querySelector(".estrellaMuerte").style.display = "block";
+
+    document.querySelector(".rebelde").style.opacity = "1";
+    document.querySelector(".rebelde").style.visibility = "visible";
+    document.querySelector(".rebelde").style.animation = "none";
+    document.querySelector(".rebelde").style.display = "block";
+
+    document.querySelector(".contenedor").style.opacity = "1";
+    document.querySelector(".contenedor").style.visibility = "visible";
+    document.querySelector(".contenedor").style.animation = "none";
+    document.querySelector(".contenedor").style.display = "block";
+
+    document.querySelector("#timer").style.opacity = "1";
+    document.querySelector("#timer").style.visibility = "visible";
+    document.querySelector("#timer").style.animation = "none";
+    document.querySelector("#timer").style.display = "block";
 }

@@ -27,7 +27,7 @@ if (!isset($_SESSION["reto4"])) {
         allow="autoplay; encrypted-media" 
         allowfullscreen>
     </iframe>
-<button class="mensaje-final" href="../back/replay.php">Volver a empezar</button> 
+<button class="reiniciar-juego" href="../back/replay.php">Volver a empezar</button> 
 </div>
 </body>
 </html>

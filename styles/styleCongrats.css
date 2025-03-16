@@ -61,6 +61,26 @@
     visibility: hidden;
     animation: fadeIn 2s ease-in-out 104s forwards;
 }
+button.reiniciar-juego
+{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 52, 71, 0.9);
+    color: #00aaff;
+    padding: 20px 40px;
+    border: 2px solid rgba(0, 170, 255, 0.8);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
+    text-align: center;
+    /*opacity: 0;
+    visibility: hidden;
+    animation: fadeIn 2s ease-in-out 104s forwards;*/
+}
 @keyframes fadeIn {
     0% { opacity: 0; visibility: hidden; }
     100% { opacity: 1; visibility: visible; }
