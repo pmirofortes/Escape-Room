@@ -77,9 +77,9 @@ button.reiniciar-juego
     text-transform: uppercase;
     box-shadow: 0 0 20px rgba(0, 170, 255, 0.8);
     text-align: center;
-    /*opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    animation: fadeIn 2s ease-in-out 104s forwards;*/
+    animation: fadeIn 2s ease-in-out 104s forwards;
 }
 @keyframes fadeIn {
     0% { opacity: 0; visibility: hidden; }

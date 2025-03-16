@@ -40,7 +40,7 @@
     <source src="./media/intro.mp3" type="audio/mpeg">   
     </audio>
 
-    <!-- Mensaje para no poder hacer trampas -->
+    <!-- Mensaje para no poder hacer trampas-->
     <?php
     if (isset($_GET["pillo"])){
         echo "<p style='color: red;'>Te has pasado de listo. </p>";
