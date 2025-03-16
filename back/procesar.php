@@ -51,7 +51,7 @@ else if(isset($_POST["reto3"]) && strtolower(str_replace(' ', '', $_POST["codigo
         exit();
     }
 }else if (isset($_POST["reto3"])){ 
-    header("Location: ../front/gameover.php?base_echo_fallos"); // Redirigir al gameover
+    header("Location: ../front/gameover.php?motivo=base_echo_fallos"); // Redirigir al gameover
     exit();
 }
 
